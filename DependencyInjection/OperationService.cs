@@ -3,7 +3,7 @@ namespace DependencyInjection
 {
     public class OperationService : ISingletonService, ITransientService, IScopedService
     {
-        Guid id;
+        Guid id;  //Guid, benzersiz değerler oluşturmak için kullanılır.
         public OperationService()
         {
             id = Guid.NewGuid();
